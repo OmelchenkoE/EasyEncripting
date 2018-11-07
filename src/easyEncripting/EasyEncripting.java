@@ -18,36 +18,7 @@ public class EasyEncripting {
 
     public static void main(String[] args) throws UnsupportedEncodingException {
         getStringFromBinaryLong(encript(encript(getBinaryInLongArrayFromString("привет"), "key"), "key"));
-      }
-    /*
-     //it use String array
-     public static ArrayList<String> getBinaryFromString(String s) {
-     ArrayList<String> arr1 = new ArrayList<>();
-     char[] arr = s.toCharArray();
-     for (char c : arr) {
-     String u = Integer.toBinaryString(c);
-     arr1.add(u);
-     }
-     System.out.println(arr1);
-     return arr1;
-     }
-
-     public static StringBuilder getStringFromBinaryString(ArrayList<String> arr1) {
-     StringBuilder sb = new StringBuilder();
-     System.out.println(arr1);
-     ArrayList<Character> arr2 = new ArrayList<>();
-     for (String p : arr1) {
-     //arr2.add((char)Integer.parseInt(p,2));//put to array
-
-     sb.append((char) Integer.parseInt(p, 2));//put to sb
-     }
-
-     // System.out.println(arr2); //show array
-     System.out.println(sb);//show sb
-     return sb;
-     }
-     */
-
+    }
     public static String getStringFromBinaryLong(ArrayList<Long> arr1) {
         StringBuilder sb = new StringBuilder();
         System.out.println(arr1);
